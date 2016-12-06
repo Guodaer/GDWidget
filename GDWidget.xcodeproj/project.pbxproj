@@ -15,6 +15,9 @@
 		04C834A71DF6920C0059AD9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C834A51DF6920C0059AD9F /* LaunchScreen.storyboard */; };
 		04C834B21DF6920C0059AD9F /* GDWidgetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C834B11DF6920C0059AD9F /* GDWidgetTests.m */; };
 		04C834BD1DF6920C0059AD9F /* GDWidgetUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C834BC1DF6920C0059AD9F /* GDWidgetUITests.m */; };
+		04C834D31DF6969B0059AD9F /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C834D21DF6969B0059AD9F /* NotificationCenter.framework */; };
+		04C834D71DF6969B0059AD9F /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C834D61DF6969B0059AD9F /* TodayViewController.m */; };
+		04C834DE1DF6969B0059AD9F /* GDTodayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 04C834D01DF6969B0059AD9F /* GDTodayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +35,28 @@
 			remoteGlobalIDString = 04C834931DF6920C0059AD9F;
 			remoteInfo = GDWidget;
 		};
+		04C834DC1DF6969B0059AD9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04C8348C1DF6920C0059AD9F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04C834CF1DF6969B0059AD9F;
+			remoteInfo = GDTodayWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04C834E21DF6969B0059AD9F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				04C834DE1DF6969B0059AD9F /* GDTodayWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		04C834941DF6920C0059AD9F /* GDWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +75,13 @@
 		04C834B81DF6920C0059AD9F /* GDWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C834BC1DF6920C0059AD9F /* GDWidgetUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDWidgetUITests.m; sourceTree = "<group>"; };
 		04C834BE1DF6920C0059AD9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C834D01DF6969B0059AD9F /* GDTodayWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GDTodayWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C834D21DF6969B0059AD9F /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		04C834D51DF6969B0059AD9F /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		04C834D61DF6969B0059AD9F /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		04C834DB1DF6969B0059AD9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C834E31DF697B70059AD9F /* GDTodayWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GDTodayWidget.entitlements; sourceTree = "<group>"; };
+		04C834E41DF697CD0059AD9F /* GDWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GDWidget.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +106,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04C834CD1DF6969B0059AD9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C834D31DF6969B0059AD9F /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +123,8 @@
 				04C834961DF6920C0059AD9F /* GDWidget */,
 				04C834B01DF6920C0059AD9F /* GDWidgetTests */,
 				04C834BB1DF6920C0059AD9F /* GDWidgetUITests */,
+				04C834D41DF6969B0059AD9F /* GDTodayWidget */,
+				04C834D11DF6969B0059AD9F /* Frameworks */,
 				04C834951DF6920C0059AD9F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +135,7 @@
 				04C834941DF6920C0059AD9F /* GDWidget.app */,
 				04C834AD1DF6920C0059AD9F /* GDWidgetTests.xctest */,
 				04C834B81DF6920C0059AD9F /* GDWidgetUITests.xctest */,
+				04C834D01DF6969B0059AD9F /* GDTodayWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +143,7 @@
 		04C834961DF6920C0059AD9F /* GDWidget */ = {
 			isa = PBXGroup;
 			children = (
+				04C834E41DF697CD0059AD9F /* GDWidget.entitlements */,
 				04C8349A1DF6920C0059AD9F /* AppDelegate.h */,
 				04C8349B1DF6920C0059AD9F /* AppDelegate.m */,
 				04C8349D1DF6920C0059AD9F /* ViewController.h */,
@@ -140,6 +183,25 @@
 			path = GDWidgetUITests;
 			sourceTree = "<group>";
 		};
+		04C834D11DF6969B0059AD9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04C834D21DF6969B0059AD9F /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04C834D41DF6969B0059AD9F /* GDTodayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				04C834E31DF697B70059AD9F /* GDTodayWidget.entitlements */,
+				04C834D51DF6969B0059AD9F /* TodayViewController.h */,
+				04C834D61DF6969B0059AD9F /* TodayViewController.m */,
+				04C834DB1DF6969B0059AD9F /* Info.plist */,
+			);
+			path = GDTodayWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,10 +212,12 @@
 				04C834901DF6920C0059AD9F /* Sources */,
 				04C834911DF6920C0059AD9F /* Frameworks */,
 				04C834921DF6920C0059AD9F /* Resources */,
+				04C834E21DF6969B0059AD9F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				04C834DD1DF6969B0059AD9F /* PBXTargetDependency */,
 			);
 			name = GDWidget;
 			productName = GDWidget;
@@ -196,6 +260,23 @@
 			productReference = 04C834B81DF6920C0059AD9F /* GDWidgetUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		04C834CF1DF6969B0059AD9F /* GDTodayWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C834DF1DF6969B0059AD9F /* Build configuration list for PBXNativeTarget "GDTodayWidget" */;
+			buildPhases = (
+				04C834CC1DF6969B0059AD9F /* Sources */,
+				04C834CD1DF6969B0059AD9F /* Frameworks */,
+				04C834CE1DF6969B0059AD9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GDTodayWidget;
+			productName = GDTodayWidget;
+			productReference = 04C834D01DF6969B0059AD9F /* GDTodayWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,6 +290,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = MCA22CRP8N;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					04C834AC1DF6920C0059AD9F = {
 						CreatedOnToolsVersion = 8.0;
@@ -221,6 +307,16 @@
 						DevelopmentTeam = MCA22CRP8N;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 04C834931DF6920C0059AD9F;
+					};
+					04C834CF1DF6969B0059AD9F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = MCA22CRP8N;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -240,6 +336,7 @@
 				04C834931DF6920C0059AD9F /* GDWidget */,
 				04C834AC1DF6920C0059AD9F /* GDWidgetTests */,
 				04C834B71DF6920C0059AD9F /* GDWidgetUITests */,
+				04C834CF1DF6969B0059AD9F /* GDTodayWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -263,6 +360,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		04C834B61DF6920C0059AD9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C834CE1DF6969B0059AD9F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -298,6 +402,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04C834CC1DF6969B0059AD9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C834D71DF6969B0059AD9F /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -310,6 +422,11 @@
 			isa = PBXTargetDependency;
 			target = 04C834931DF6920C0059AD9F /* GDWidget */;
 			targetProxy = 04C834B91DF6920C0059AD9F /* PBXContainerItemProxy */;
+		};
+		04C834DD1DF6969B0059AD9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04C834CF1DF6969B0059AD9F /* GDTodayWidget */;
+			targetProxy = 04C834DC1DF6969B0059AD9F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -351,6 +468,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -398,6 +516,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -425,8 +544,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GDWidget/GDWidget.entitlements;
 				DEVELOPMENT_TEAM = MCA22CRP8N;
 				INFOPLIST_FILE = GDWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chaui.cn.GDWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,8 +558,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GDWidget/GDWidget.entitlements;
 				DEVELOPMENT_TEAM = MCA22CRP8N;
 				INFOPLIST_FILE = GDWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chaui.cn.GDWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -495,6 +618,34 @@
 			};
 			name = Release;
 		};
+		04C834E01DF6969B0059AD9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GDTodayWidget/GDTodayWidget.entitlements;
+				DEVELOPMENT_TEAM = MCA22CRP8N;
+				INFOPLIST_FILE = GDTodayWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chaui.cn.GDWidget.GDTodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		04C834E11DF6969B0059AD9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GDTodayWidget/GDTodayWidget.entitlements;
+				DEVELOPMENT_TEAM = MCA22CRP8N;
+				INFOPLIST_FILE = GDTodayWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.chaui.cn.GDWidget.GDTodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -514,6 +665,7 @@
 				04C834C31DF6920C0059AD9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04C834C41DF6920C0059AD9F /* Build configuration list for PBXNativeTarget "GDWidgetTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +674,7 @@
 				04C834C61DF6920C0059AD9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04C834C71DF6920C0059AD9F /* Build configuration list for PBXNativeTarget "GDWidgetUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +683,16 @@
 				04C834C91DF6920C0059AD9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04C834DF1DF6969B0059AD9F /* Build configuration list for PBXNativeTarget "GDTodayWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C834E01DF6969B0059AD9F /* Debug */,
+				04C834E11DF6969B0059AD9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

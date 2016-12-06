@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>GDTodayWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>GDWidget.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>04C834B71DF6920C0059AD9F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04C834CF1DF6969B0059AD9F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
